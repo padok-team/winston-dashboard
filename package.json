@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "dev":
-      "concurrently \"nodemon test.js\" \"cd src/front-end && parcel index.html --out-dir logs/ --public-url /\"",
-    "build": "cd src/front-end && parcel build index.html --public-url /logs",
+      "concurrently \"nodemon test.js\" \"cd src/front-end && parcel index.html --public-url /\"",
+    "build": "cd src/front-end && parcel build index.html --out-dir dist/logs/  --public-url /logs",
     "publish": "npm run build",
     "test": "./"
   },
