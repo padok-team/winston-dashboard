@@ -161,6 +161,10 @@ class App extends Component {
   }
 
   get table() {
+    console.log('before', this.logs);
+    this.logs = this.logs.map(log => log).reverse();
+    console.log('before', this.logs);
+
     return (
       <div>
         <div style={{ height: '60%', overflowY: 'scroll' }}>
