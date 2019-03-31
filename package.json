@@ -6,7 +6,7 @@
   "scripts": {
     "dev":
       "concurrently \"nodemon test.js\" \"cd src/front-end && parcel index.html --public-url /\"",
-    "build": "cd src/front-end && parcel build index.html --out-dir dist/logs/  --public-url /logs",
+    "build": "cd src/front-end && parcel build index.html --out-dir dist/logs/  --public-url ./logs",
     "publish": "npm run build",
     "test": "./"
   },
