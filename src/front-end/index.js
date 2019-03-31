@@ -162,8 +162,8 @@ class App extends Component {
 
   get table() {
     console.log('before', this.logs);
-    this.logs = this.logs.map(log => log).reverse();
-    console.log('before', this.logs);
+    const reversedlogs = this.logs.map(log => log).reverse();
+    console.log('before', reversedlogs);
 
     return (
       <div>
@@ -177,7 +177,7 @@ class App extends Component {
               </tr>
             </thead>
             <tbody>
-              {this.logs.map(({ level, message, timestamp }) => (
+              {reversedlogs.map(({ level, message, timestamp }) => (
                 <tr>
                   <td
                     className={
