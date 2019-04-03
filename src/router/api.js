@@ -19,6 +19,7 @@ module.exports = config => {
   });
 
   router.use('/sources', (req, res, next) => {
+    console.log("In router.use('/sources), req", req);
     res.send(sourceNames);
   });
 
