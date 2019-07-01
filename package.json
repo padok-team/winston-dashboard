@@ -4,8 +4,7 @@
   "description": "React Based Log Browser",
   "main": "src/index.js",
   "scripts": {
-    "dev":
-      "concurrently \"nodemon test.js\" \"cd src/front-end && parcel index.html --public-url /\"",
+    "dev": "concurrently \"nodemon test.js\" \"cd src/front-end && parcel index.html --public-url /\"",
     "build": "cd src/front-end && parcel build index.html --out-dir dist/logs/  --public-url ./logs",
     "publish": "npm run build",
     "test": "./"
@@ -32,10 +31,14 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "moment": "^2.21.0",
-    "node-sass": "^4.7.2"
+    "node-sass": "^4.12.0"
   },
   "peerDependencies": {
     "winston": "^2.4.1"
   },
-  "files": ["src/**/*.js", "src/**/*.css", "src/**/*.html"]
+  "files": [
+    "src/**/*.js",
+    "src/**/*.css",
+    "src/**/*.html"
+  ]
 }
