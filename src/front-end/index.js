@@ -161,9 +161,7 @@ class App extends Component {
   }
 
   get table() {
-    console.log('before', this.logs);
     const reversedlogs = this.logs.map(log => log).reverse();
-    console.log('before', reversedlogs);
 
     return (
       <div>
